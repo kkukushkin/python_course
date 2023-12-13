@@ -54,6 +54,7 @@ class NeuralNetwork:
         return predictions
 
 
+
 nn = NeuralNetwork(epochs=15, batch_size=10)
 nn.prepare_data('data.txt')
 nn.train()
