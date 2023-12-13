@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-
+import matplotlib.pyplot as plt
 
 #task1
 data = np.random.randint(1, 11, size=(10, 10))
@@ -35,3 +35,5 @@ print(df5['Category'][df5.Rank == 1])
 df6 = pd.read_csv('C:/Users/Kukushkin/PycharmProjects/game/hw_task_5/emojis.csv')
 
 print(df6.groupby('Year')['Year'].count())
+plt.plot(df6.groupby('Year')['Year'].count())
+plt.show()
